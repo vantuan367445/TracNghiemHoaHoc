@@ -217,7 +217,7 @@ public class UiActivity extends AppCompatActivity {
                         // nhận kqua từ PHP trả về  sau khi hàm Map được gửi lên
                         // nếu thành công thì PHP trả về  success . vậy mình lấy cái này để đem đi so sánh
 
-                        if(response.toString().trim().equals("success")){
+                        if(response.trim().equals("success")){
                             Toast.makeText(UiActivity.this, R.string.taothanhcong, Toast.LENGTH_SHORT).show();
                             edt_useremaillognin.setText(userLogIn_Create.getEmail());
                             edt_userpasslognin.setText(userLogIn_Create.getPass());

@@ -44,7 +44,7 @@ public class FragmentChemistry_Home extends Fragment {
         ArrayList<ModelChemistry> arrayList = getFakeData();
 
         AdapterChemistry adapterChemistry = new AdapterChemistry(arrayList,getActivity());
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerViewChemistry);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerViewChemistry);
         // recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),1));
         recyclerView.setHasFixedSize(true);

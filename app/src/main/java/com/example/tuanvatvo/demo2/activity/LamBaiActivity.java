@@ -339,7 +339,7 @@ public class LamBaiActivity extends AppCompatActivity {
                     public void onResponse(String response) {
                         // nhận kqua từ PHP trả về  sau khi hàm Map được gửi lên
                         // nếu thành công thì PHP trả về  success . vậy mình lấy cái này để đem đi so sánh
-                        if(response.toString().trim().equals("success")){
+                        if(response.trim().equals("success")){
                             //Toast.makeText(LamBaiActivity.this, "Gửi history thành công", Toast.LENGTH_SHORT).show();
                         }
                         else

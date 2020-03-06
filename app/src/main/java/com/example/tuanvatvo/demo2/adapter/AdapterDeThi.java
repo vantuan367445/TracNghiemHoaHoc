@@ -58,8 +58,8 @@ public class AdapterDeThi extends RecyclerView.Adapter<AdapterDeThi.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
         ModelDeThi modelDeThi = mList.get(i);
-        viewHolder.txtnameDeThi.setText(modelDeThi.getNamedethi().toString().trim());
-        viewHolder.txtmaDeThi.setText(modelDeThi.getMade().toString().trim());
+        viewHolder.txtnameDeThi.setText(modelDeThi.getNamedethi().trim());
+        viewHolder.txtmaDeThi.setText(modelDeThi.getMade().trim());
         viewHolder.txt_socauhoiDeThi.setText(modelDeThi.getSocauhoi()+" câu");
         viewHolder.txt_timelambaiDeThi.setText((long)(modelDeThi.getSocauhoi()*1.5)+" phút");
 
@@ -120,7 +120,7 @@ public class AdapterDeThi extends RecyclerView.Adapter<AdapterDeThi.ViewHolder> 
                 contect.finish();
             }
         });
-        getModelCauHoiJson(modelDeThi.getMade().toString().trim());
+        getModelCauHoiJson(modelDeThi.getMade().trim());
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }

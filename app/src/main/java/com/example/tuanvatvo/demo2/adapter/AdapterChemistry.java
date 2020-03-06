@@ -48,7 +48,7 @@ public  class AdapterChemistry extends RecyclerView.Adapter<AdapterChemistry.Vie
 
         holder.text_id.setText(chemistry2.getName()+"");
         Picasso.with(context).load(chemistry2.getLinkImage()).into(holder.img_avt);
-        holder.text_mota.setText(chemistry2.getDescribe().toString().trim());
+        holder.text_mota.setText(chemistry2.getDescribe().trim());
 
         if(chemistry2.isSelected() == true){
              // đã click
